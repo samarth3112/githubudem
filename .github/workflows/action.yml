@@ -14,3 +14,8 @@ jobs:
 
       - name:  log time 
         run: echo "${{ steps.greet.outputs.time}}"
+
+      - name: List file
+        run: |
+          pwd
+          ls

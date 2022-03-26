@@ -15,13 +15,12 @@ jobs:
       - name:  log time 
         run: echo "${{ steps.greet.outputs.time}}"
 
+      
+      - name: Checkout
+        uses: actions/checkout
+
+
       - name: List file
         run: |
           pwd
           ls
-      - name: Checkout
-        uses: actions/checkout
-      - name: List files after
-        run:  |
-         pwd
-         ls

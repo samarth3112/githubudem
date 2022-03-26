@@ -12,9 +12,19 @@ jobs:
         run: |
           node -v
           npm -v
-      - name: python Commands
-        run: |
-        import platform
-        print
-        (platform.processor())
-       shell: python
+      # - name: python Commands
+      #   run: |
+      #   import platform
+      #   print
+      #   (platform.processor())
+      #  shell: python
+  run-windows-command:
+   runs-on: windows-latest
+   needs: ['run-shell-command']
+    steps:
+      - name: Directory pwsh
+        run: Get-Location
+      - name: Directory bash
+        run: pwd
+        shell: bash
+

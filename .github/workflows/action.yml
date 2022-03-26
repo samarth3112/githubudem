@@ -24,5 +24,4 @@ jobs:
       - name: List files after
         run:  |
          pwd
-         List
-         
+         ls

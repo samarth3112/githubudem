@@ -6,9 +6,9 @@ name: Actions workflow
     push:
        branches:
          - "main"
-         - "feature/*" 
-         - "feature/**"
-         - "!feature/notallow"
+        #  - "feature/*" 
+        #  - "feature/**"
+        #  - "!feature/notallow"
        tags:
          - vi.*
 

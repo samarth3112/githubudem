@@ -8,6 +8,9 @@ name: Actions workflow
          - "main"
          - "feature/*" 
          - "feature/**"
+         - "!feature/notallow"
+       tags:
+         - vi.*
 
     
 

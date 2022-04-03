@@ -1,6 +1,16 @@
 name: Actions workflow
 
-on: [push]
+#on: [push]
+
+ on:  
+    push:
+       branches:
+         - "main"
+         - "feature/*" 
+         - "feature/**"
+
+    
+
 
 jobs:
   run-github-actions:

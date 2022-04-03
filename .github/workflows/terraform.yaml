@@ -23,16 +23,16 @@ jobs:
         shell: bash
  
     steps:
-    # Checkout the repository to the GitHub Actions runner
+    # Checkout the repository to the GitHub Actions runner test.
     - name: Checkout
       uses: actions/checkout@v2
  
-    - name: 'Terraform Format'
-      uses: hashicorp/terraform-github-actions@master
-      with:
-        tf_actions_version: 0.14.8
-        tf_actions_subcommand: 'fmt'
-        tf_actions_working_dir: "./infrastructure"
+    # - name: 'Terraform Format'
+    #   uses: hashicorp/terraform-github-actions@master
+    #   with:
+    #     tf_actions_version: 0.14.8
+    #     tf_actions_subcommand: 'fmt'
+    #     tf_actions_working_dir: "./infrastructure"
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master

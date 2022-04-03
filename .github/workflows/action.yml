@@ -1,16 +1,6 @@
 name: Actions workflow
 
-#on: [push]
-
- on:  
-    push:
-       branches:
-         - "main"
-        #  - "feature/*" 
-        #  - "feature/**"
-        #  - "!feature/notallow"
-       tags:
-         - vi.*
+on: [push]
 
     
 
